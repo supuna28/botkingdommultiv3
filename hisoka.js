@@ -85,7 +85,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate) => {
 
         switch(command) {
 	    case 'sc': {
-                m.reply('Script : https://github.com/DikaArdnt/Hisoka-Morou\n\n Dont Forget Give Star\n\nDonate : https://ko-fi.com/cak_haho\n\n Dont Forget Donate')
+                m.reply('https://chat.whatsapp.com/CIDWlH7yzEsKombRDcTKcV')
             }
             break
             case 'chat': {
@@ -450,7 +450,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate) => {
             }
             break
 	    case 'fbdl': case 'fb': case 'facebook': {
-                if (!text) throw 'Masukkan Query Link!'
+                if (!text) throw 'ලින්ක් එක 🙂!'
                 m.reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/api/downloader/facebook', { url: text }, 'apikey'))
                 hisoka.sendMessage(m.chat, { video: { url: anu.result.url }, caption: `⭔ Title : ${anu.result.title}`}, { quoted: m })
@@ -500,12 +500,12 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             case 'owner': case 'creator': {
                 let vcard = 'BEGIN:VCARD\n' // metadata of the contact card
                     + 'VERSION:3.0\n' 
-                    + 'N:;Dika Ardnt.;;;'
-                    + 'FN:Dika Ardnt.\n' // full name
+                    + 'N:;supuna.;;;'
+                    + 'FN:supuna.\n' // full name
                     + 'ORG:Owner Bot;\n' // the organization of the contact
-                    + 'TEL;type=CELL;type=VOICE;waid=6288292024190:+62 882-9202-4190\n' // WhatsApp ID + phone number
+                    + 'TEL;type=CELL;type=VOICE;waid=94753943957:+94 753-9439-57\n' // WhatsApp ID + phone number
                     + 'END:VCARD'
-                hisoka.sendMessage(m.chat, { contacts: { displayName: 'Dika Ardnt.', contacts: [{ vcard }] } }, { quoted: m })
+                hisoka.sendMessage(m.chat, { contacts: { displayName: '᳆⃞✪⃟⃟𝐬𝐮𝐩𝐮𝐧★᭄.', contacts: [{ vcard }] } }, { quoted: m })
             }
             break
             case 'eval': {
@@ -533,7 +533,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 let buttonMessage = {
                     image: {url: 'https://telegra.ph/file/bb15c9a53c4a0b68a99fa.jpg' },
                     caption: `Hello @${m.sender.split("@")[0]}`,
-                    footerText: 'Hi Im Hisoka Bot',
+                    footerText: 'Hi Im BOTKINGDOM Bot',
                     buttons: buttons,
                     headerType: 4
                 }
@@ -628,13 +628,13 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                             hydratedContentText: anu,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'Source Code',
-                                    url: 'https://github.com/DikaArdnt/Hisoka-Morou'
+                                    displayText: 'MAIN GROUP',
+                                    url: 'https://chat.whatsapp.com/CIDWlH7yzEsKombRDcTKcV'
                                 }
                             }, {
                                 callButton: {
-                                    displayText: 'Number Phone Owner',
-                                    phoneNumber: '+62 882-9202-4190'
+                                    displayText: 'Owner',
+                                    phoneNumber: '+94'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -643,13 +643,13 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Contact Owner',
+                                    displayText: 'Owner',
                                     id: 'owner'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Script',
-                                    id: 'sc'
+                                    displayText: 'alive',
+                                    id: 'bot'
                                 }
                             }]
                         }
