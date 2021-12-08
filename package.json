@@ -34,7 +34,6 @@
     "request": "^2.88.2",
     "util": "^0.12.4",
     "yargs": "^17.2.1",
-    "s-youtube": "^2.10.2"
   },
   "directories": {
     "lib": "lib"
