@@ -80,7 +80,7 @@ async function startHisoka() {
         if (connection === 'close') {
             lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut ? startHisoka() : console.log('Koneksi Terputus...')
         }
-        console.log('Koneksi Terhubung...', update)
+        console.log('Koneksi Terhubung...' update)
     })
 
     hisoka.ev.on('creds.update', saveState)
