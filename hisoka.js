@@ -574,7 +574,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 │⭔ ${prefix}pinterest [query]
 │⭔ ${prefix}wallpaper [query]
 │⭔ ${prefix}wikimedia [query]
-│⭔ ${prefix}ytsearch [query]
+│⭔ ${prefix}syoutube[query]
 │
 └───────⭓
 
